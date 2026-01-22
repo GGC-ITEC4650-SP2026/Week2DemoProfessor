@@ -132,6 +132,9 @@ GameObject:
   - component: {fileID: 154899381}
   - component: {fileID: 154899380}
   - component: {fileID: 154899384}
+  - component: {fileID: 154899385}
+  - component: {fileID: 154899386}
+  - component: {fileID: 154899387}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -239,11 +242,54 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154899379}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 633aed37a5f1c44b0ac8ae9176d00dfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleport
+--- !u!114 &154899385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154899379}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a316fdf8c454fc7ab587320d27ed00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SimpleMove
+  dir: {x: 0, y: 1, z: 0}
+--- !u!114 &154899386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154899379}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb5f9d225ce142c6a56d4638cba3ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TimedMove
+  dir: {x: 1, y: 0, z: 0}
+  speed: 2
+  moveTime: 3
+--- !u!114 &154899387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 154899379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ba015f15306a49b992449008306f2be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DistanceMove
+  dir: {x: 1, y: 1, z: 0}
+  speed: 2
+  moveDist: 5
 --- !u!1 &695891381
 GameObject:
   m_ObjectHideFlags: 0
